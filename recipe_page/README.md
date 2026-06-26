@@ -88,7 +88,7 @@ In future projects, I want to improve my skills in:
 
 * Name - Karthikeya
 * GitHub - https://github.com/Karthikeya-JustForKnowing
-* Frontend Mentor - Add your Frontend Mentor profile later
+* Frontend Mentor - https://www.frontendmentor.io/profile/Karthikeya-JustForKnowing
 
 ---
 
