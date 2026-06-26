@@ -1,8 +1,13 @@
+
+
+
 function ExtensionCard({ name, logo, description, isActive, onToggle, onRemove }) {
+    const base = import.meta.env.BASE_URL;
+
   return (
     <div className="card">
       <div className="card-top">
-        <img src={logo} alt={name} className="card-logo" />
+        <img src={`${base}${logo}`} alt={name} className="card-logo" />
         <div className="card-info">
           <h2 className="card-name">{name}</h2>
           <p className="card-description">{description}</p>
