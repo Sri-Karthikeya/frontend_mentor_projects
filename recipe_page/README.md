@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-* Solution URL: https://karthikeya-justforknowing.github.io/frontend_mentor_projects/recipe_page/
-* Live Site URL: https://karthikeya-justforknowing.github.io/frontend_mentor_projects/recipe_page/
+* Solution URL: https://Sri-Karthikeya.github.io/frontend_mentor_projects/recipe_page/
+* Live Site URL: https://Sri-Karthikeya.github.io/frontend_mentor_projects/recipe_page/
 
 
 ## My process
@@ -87,8 +87,8 @@ In future projects, I want to improve my skills in:
 ## Author
 
 * Name - Karthikeya
-* GitHub - https://github.com/Karthikeya-JustForKnowing
-* Frontend Mentor - https://www.frontendmentor.io/profile/Karthikeya-JustForKnowing
+* GitHub - https://github.com/Sri-Karthikeya
+* Frontend Mentor - https://www.frontendmentor.io/profile/Sri-Karthikeya
 
 ---
 

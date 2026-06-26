@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-* Live Site URL: https://karthikeya-justforknowing.github.io/frontend_mentor_projects/typing-speed-test/
+* Live Site URL: https://Sri-Karthikeya.github.io/frontend_mentor_projects/typing-speed-test/
 
 ---
 
@@ -89,8 +89,8 @@ In future projects, I want to improve:
 
 ## Author
 
-* Frontend Mentor - [@Karthikeya-JustForKnowing](https://www.frontendmentor.io/profile/Karthikeya-JustForKnowing)
-* GitHub - https://github.com/Karthikeya-JustForKnowing
+* Frontend Mentor - [@Sri-Karthikeya](https://www.frontendmentor.io/profile/Sri-Karthikeya)
+* GitHub - https://github.com/Sri-Karthikeya
 
 ---
 

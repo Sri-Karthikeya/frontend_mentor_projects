@@ -28,8 +28,8 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: https://github.com/Karthikeya-JustForKnowing/browser-extensions-manager-ui  
-- Live Site URL: https://karthikeya-justforknowing.github.io/browser-extensions-manager-ui  
+- Solution URL: https://github.com/Sri-Karthikeya/browser-extensions-manager-ui  
+- Live Site URL: https://Sri-Karthikeya.github.io/browser-extensions-manager-ui  
 
 ---
 

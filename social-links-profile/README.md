@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-* Live Site URL: https://karthikeya-justforknowing.github.io/frontend_mentor_projects/social-links-profile-main/
+* Live Site URL: https://Sri-Karthikeya.github.io/frontend_mentor_projects/social-links-profile-main/
 
 ---
 
@@ -90,8 +90,8 @@ It helped me understand concepts step by step instead of only giving code.
 
 ## Author
 
-* Frontend Mentor - @Karthikeya-JustForKnowing
-* GitHub - https://github.com/@Karthikeya-JustForKnowing
+* Frontend Mentor - @Sri-Karthikeya
+* GitHub - https://github.com/@Sri-Karthikeya
 
 
 ---

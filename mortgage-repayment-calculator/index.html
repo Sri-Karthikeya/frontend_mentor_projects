@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title> Mortage Repayment Calculator</title>
+</head>
+
+<body>
+    <main class="calculator">
+        <section class="panel panel--form">
+            <header class="form-header">
+                <h1 class="form-title">Mortage Calculator</h1>
+                <button type="button" class="clear-btn" id="clear-btn">Clear All</button>
+            </header>
+            <form id="mortageForm" novalidate>
+                <div class="field" id="field-amount"></div>
+                <lable class="field__label" for="amount"> Mortage Amount</lable>
+                <div class="input-warp input-wrap--prefix">
+                    <span class="input-affix">£</span>
+                    <input type="number" class="input" id="amount" name="amount" min="1" step="any" />
+                </div>
+                    <span class="field__error" aria-live="polite">This field is required</span>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
