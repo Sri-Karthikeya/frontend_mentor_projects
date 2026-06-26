@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-* Solution URL: Coming soon
-* Live Site URL: Coming soon (GitHub Pages)
+* Solution URL: https://karthikeya-justforknowing.github.io/frontend_mentor_projects/recipe_page/
+* Live Site URL: https://karthikeya-justforknowing.github.io/frontend_mentor_projects/recipe_page/
 
 
 ## My process
