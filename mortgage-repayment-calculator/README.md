@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-* Solution URL: https://Sri-Karthikeya.github.io/frontend_mentor_projects/mortgage-repayment-calculator/
+* Solution URL: https://github.com/Sri-Karthikeya/mortgage-repayment-calculator/
 * Live Site URL: https://Sri-Karthikeya.github.io/frontend_mentor_projects/mortgage-repayment-calculator/
 
 
