@@ -90,7 +90,7 @@ It helped me understand concepts step by step instead of only giving code.
 
 ## Author
 
-* Frontend Mentor - @@Karthikeya-JustForKnowing
+* Frontend Mentor - @Karthikeya-JustForKnowing
 * GitHub - https://github.com/@Karthikeya-JustForKnowing
 
 

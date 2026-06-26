@@ -1,0 +1,1633 @@
+@font-face {
+
+    font-family: 'sora';
+
+    src: url(./assets/fonts/Sora/Sora-VariableFont_wght.ttf) format(truetype);
+
+    font-display: swap;
+
+}
+
+
+
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.bod {
+
+    display: flex;
+
+    flex-direction: column;
+
+    /* justify-content: center; */
+
+    align-items: center;
+
+}
+
+
+
+.app {
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: #0B0C10;
+
+    max-width: 1440px;
+
+    height: 100vh;
+
+}
+
+
+
+.header {
+
+    display: flex;
+
+    flex-direction: row;
+
+    color: white;
+
+    padding: 42px;
+
+    padding-top: 14px;
+
+    padding-bottom: 31px;
+
+}
+
+
+
+.personalscore {
+
+    display: flex;
+
+    flex-direction: row;
+
+}
+
+
+
+.personalbest {}
+
+
+
+.btn1.selected,
+
+.timed.selected,
+
+.passage.selected {
+
+    border: 1px solid hsl(140, 63%, 57%);
+
+}
+
+
+
+.per {
+
+
+
+    font-size: 13px;
+
+    font-family: 'sora';
+
+}
+
+
+
+.stats-op {
+
+
+
+    display: flex;
+
+
+
+    padding-right: 25px;
+
+
+
+    font-size: 10px;
+
+
+
+    font-family: 'sora';
+
+}
+
+
+
+.mainstat {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    padding-left: 0px;
+
+
+
+    font-size: 13px;
+
+}
+
+
+
+.diffmob {
+
+
+
+    border: 1px solid;
+
+
+
+    display: none;
+
+}
+
+
+
+.wpmscore {}
+
+
+
+.stats {
+
+
+
+    color: #A0A0A0;
+
+
+
+    display: flex;
+
+
+
+    flex-direction: row;
+
+
+
+    padding-right: 30px;
+
+}
+
+
+
+.controls {
+
+
+
+    display: flex;
+
+
+
+    padding-right: 20px;
+
+}
+
+
+
+.difficulty {
+
+
+
+    padding-right: 78px;
+
+
+
+    font-size: 13px;
+
+}
+
+
+
+.btn1 {
+
+
+
+    font-size: 8px;
+
+
+
+    font-family: 'sora';
+
+
+
+    background: none;
+
+
+
+    border-radius: 4px;
+
+
+
+    color: white;
+
+
+
+    padding: 3px;
+
+
+
+    border: 1px solid #3A3A3A;
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+.mode {
+
+
+
+    color: white;
+
+
+
+    font-size: 10px;
+
+
+
+    font-family: 'sora';
+
+}
+
+
+
+.modemob {
+
+    display: none;
+
+}
+
+
+
+
+
+.blur {
+
+
+
+    filter: blur(4px);
+
+
+
+    opacity: 0.6;
+
+
+
+}
+
+
+
+.restarttest {
+
+
+
+    font-family: '';
+
+
+
+    font-family: 'sora';
+
+
+
+    font-size: 14px;
+
+
+
+    background: none;
+
+
+
+    color: white;
+
+
+
+    border: 1px solid grey;
+
+
+
+    padding: 6px;
+
+
+
+    margin: 35px;
+
+
+
+    border-radius: 14px;
+
+}
+
+
+
+.retake {
+
+
+
+    display: flex;
+
+
+
+    flex-direction: column;
+
+
+
+    justify-content: center;
+
+
+
+    align-items: center;
+
+    margin-top: auto;
+
+    padding-bottom: 20px;
+
+}
+
+
+
+.horizontalline {
+
+    border: none;
+
+    height: 1px;
+
+    background-color: #A0A0A0;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+}
+
+
+
+.star1 {
+
+
+
+    width: 38px;
+
+
+
+    height: 38px;
+
+
+
+    position: absolute;
+
+
+
+    margin-left: 424px;
+
+}
+
+
+
+.star2 {
+
+
+
+    width: 32px;
+
+
+
+    height: 32px;
+
+
+
+    position: absolute;
+
+
+
+    margin-top: -271px;
+
+
+
+    margin-left: -339px;
+
+}
+
+
+
+.restartlogo {
+
+
+
+    width: 14px;
+
+
+
+    height: 14px;
+
+}
+
+
+
+.goagain {
+
+
+
+    color: #FFFFFF;
+
+
+
+    border: none;
+
+
+
+    background: none;
+
+
+
+    border: 1px solid #2A2D35;
+
+
+
+    padding: 8px;
+
+
+
+    border-radius: 15px;
+
+
+
+    margin-bottom: 80px;
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    gap: 12px;
+
+}
+
+
+
+.successicon {
+
+
+
+    width: 80px;
+
+
+
+    height: 80px;
+
+
+
+    display: flex;
+
+
+
+    justify-content: center;
+
+
+
+    align-items: center;
+
+
+
+    border-radius: 50%;
+
+
+
+    border: 2px solid #2F80ED;
+
+
+
+    box-shadow: 0 0 20px rgba(47, 128, 237, 0.5);
+
+}
+
+
+
+.timed {
+
+
+
+    font-size: 10px;
+
+
+
+    font-family: 'sora';
+
+
+
+    background: none;
+
+
+
+    border-radius: 4px;
+
+
+
+    color: white;
+
+
+
+    padding: 3px;
+
+
+
+    border: 1px solid #3A3A3A;
+
+}
+
+
+
+.passage {
+
+
+
+    font-size: 10px;
+
+
+
+    font-family: 'sora';
+
+
+
+    background: none;
+
+
+
+    border-radius: 4px;
+
+
+
+    color: white;
+
+
+
+    padding: 3px;
+
+
+
+    border: 1px solid #3A3A3A;
+
+}
+
+
+
+.data {
+
+
+
+    display: flex;
+
+    flex: 1;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    flex-direction: column;
+
+
+
+    padding: 80px 20px;
+
+
+
+}
+
+
+
+.para {
+
+
+
+    color: #6E6E6E;
+
+
+
+    max-width: 900px;
+
+
+
+    text-align: center;
+
+
+
+    line-height: 1.8;
+
+
+
+    font-family: 'sora';
+
+
+
+}
+
+
+
+.start {
+
+
+
+    background: none;
+
+
+
+    border: 1px solid #3A3A3A;
+
+
+
+    font-family: 'sora';
+
+
+
+    color: white;
+
+
+
+    font-size: 12px;
+
+
+
+    padding: 5px;
+
+
+
+    border-radius: 11px;
+
+
+
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+
+
+.clickme {
+
+
+
+    color: #A0A0A0;
+
+
+
+    font-family: 'sora';
+
+
+
+    font-size: 12px;
+
+
+
+    margin-top: 11px;
+
+}
+
+
+
+.result {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    flex-direction: column;
+
+
+
+    display: none;
+
+
+
+    padding: 84px;
+
+
+
+    
+
+}
+
+
+
+
+
+.complete {
+
+
+
+    color: white;
+
+
+
+    font-family: 'sora';
+
+
+
+    font-size: 19px;
+
+}
+
+
+
+.tag {
+
+
+
+    color: #A0A0A0;
+
+
+
+    font-family: 'sora';
+
+
+
+    font-size: 14px;
+
+
+
+    margin-top: 6px;
+
+}
+
+
+
+.performance {
+
+
+
+    gap: 67px;
+
+
+
+    flex-direction: row;
+
+
+
+    display: flex;
+
+
+
+    padding-top: 29px;
+
+
+
+    padding-bottom: 36px;
+
+}
+
+
+
+.card {
+
+
+
+    font-family: 'sora';
+
+
+
+    font-size: 10px;
+
+
+
+    color: #A0A0A0;
+
+
+
+    border: 1px solid #2A2D35;
+
+
+
+    padding: 19px;
+
+
+
+    border-radius: 19px;
+
+}
+
+
+
+
+
+.correct {
+
+    color: #2ECC71;
+
+}
+
+
+
+.wrong {
+
+    color: #E74C3C;
+
+}
+
+
+
+.active {
+
+    border-left: 2px solid white;
+
+    animation: blink 1s infinite;
+
+}
+
+
+
+@keyframes blink {
+
+    0% {
+
+        border-color: white;
+
+    }
+
+
+
+    50% {
+
+        border-color: transparent;
+
+    }
+
+
+
+    100% {
+
+        border-color: white;
+
+    }
+
+
+
+}
+
+
+
+
+
+.head-logo-mob {
+
+    display: none;
+
+}
+
+
+
+.trphy-logo {
+
+    width: 18px;
+
+    height: 18px;
+
+    padding-top: 0px;
+
+    padding-right: 4px;
+
+}
+
+
+
+#controls.test-active .btn1,
+
+#controls.test-active .timed,
+
+#controls.test-active .passage,
+
+#controls.test-active .difficultymob,
+
+#controls.test-active .mobmode {
+
+    pointer-events: none;
+
+    opacity: 0.4;
+
+    cursor: not-allowed;
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+
+    .app {
+
+        width: 100%;
+
+        height: 100vh;
+
+        box-sizing: border-box;
+
+    }
+
+
+
+    .header {
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        padding: 14px 20px 16px;
+
+    }
+
+    
+
+
+    .head-logo {
+
+        display: none;
+
+    }
+
+
+
+    .head-logo-mob {
+
+        display: block;
+
+        width: 28px;
+
+        height: auto;
+
+    }
+
+
+
+    .personalscore {
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        margin-left: 0;
+
+        gap: 4px;
+
+    }
+
+
+
+    .trphy-logo {
+
+        width: 16px;
+
+        height: 16px;
+
+        padding: 0;
+
+    }
+
+
+
+    .per {
+
+        font-size: 10px;
+
+        font-family: 'sora';
+
+        white-space: nowrap;
+
+    }
+
+
+
+    .wpmscore {
+
+        font-size: 10px;
+
+        font-family: 'sora';
+
+    }
+
+
+
+    .horizontalline {
+
+        display: block;
+
+        width: 100%;
+
+        height: 1px;
+
+        border: none;
+
+        background-color: #A0A0A0;
+
+        flex-shrink: 0;
+    }
+
+
+
+    .mainstat {
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        padding: 8px 16px;
+
+        font-size: 11px;
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+
+    }
+
+
+
+    .stats {
+
+        color: #A0A0A0;
+
+        display: flex;
+
+        flex-direction: row;
+
+        gap: 6px;
+
+        padding-right: 0;
+
+    }
+
+
+
+    .stats-op {
+
+        display: flex;
+
+        flex-direction: row;
+
+        gap: 3px;
+
+        padding-right: 0;
+
+        font-size: 10px;
+
+        font-family: 'sora';
+
+    }
+
+
+
+    .controls {
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 8px;
+
+        padding-right: 0;
+
+    }
+
+
+
+    .difficulty {
+
+        display: none;
+
+    }
+
+
+
+    .diffmob {
+
+        display: block;
+
+        border: none;
+
+    }
+
+
+
+    .difficultymob {
+
+        background: hsl(0, 0%, 15%);
+
+        color: white;
+
+        border-radius: 4px;
+
+        font-family: 'sora';
+
+        font-size: 11px;
+
+        padding: 3px 5px;
+
+    }
+
+
+
+    .mode {
+
+        display: none;
+
+    }
+
+
+
+    .modemob {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 6px;
+
+        font-size: 11px;
+
+        color: #A0A0A0;
+
+        font-family: 'sora';
+
+    }
+
+
+
+    .mobmode {
+
+        background: hsl(0, 0%, 15%);
+
+        color: white;
+
+        border-radius: 4px;
+
+        font-family: 'sora';
+
+        font-size: 11px;
+
+        padding: 3px 5px;
+
+    }
+
+
+
+    .data {
+
+        display: flex;
+
+        flex: 1;
+
+        align-items: center;
+
+        justify-content: center;
+
+        flex-direction: column;
+
+        padding: 32px 20px;
+
+        gap: 16px;
+
+    }
+
+
+
+    .para {
+
+        color: #6E6E6E;
+
+        width: 100%;
+
+        max-width: 100%;
+
+        text-align: center;
+
+        line-height: 1.9;
+
+        font-family: 'sora';
+
+        font-size: 14px;
+
+        word-break: break-word;
+
+    }
+
+
+
+    .start {
+
+        background: none;
+
+        border: 1px solid #3A3A3A;
+
+        font-family: 'sora';
+
+        color: white;
+
+        font-size: 13px;
+
+        padding: 8px 14px;
+
+        border-radius: 11px;
+
+        cursor: pointer;
+
+    }
+
+
+
+    .clickme {
+
+        color: #A0A0A0;
+
+        font-family: 'sora';
+
+        font-size: 12px;
+
+        margin-top: 0;
+
+    }
+
+
+
+    .retake {
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        padding-bottom: 16px;
+
+        margin-top: auto;
+
+    }
+
+
+
+    .restarttest {
+
+        font-family: 'sora';
+
+        font-size: 13px;
+
+        background: none;
+
+        color: white;
+
+        border: 1px solid grey;
+
+        padding: 6px 14px;
+
+        margin: 20px;
+
+        border-radius: 14px;
+
+        cursor: pointer;
+
+    }
+
+
+
+    .result {
+
+        display: none;
+
+        align-items: center;
+
+        justify-content: center;
+
+        flex-direction: column;
+
+        padding: 40px 20px;
+
+        gap: 0;
+
+
+
+    }
+
+
+
+
+
+    .complete {
+
+        color: white;
+
+        font-family: 'sora';
+
+        font-size: 18px;
+
+        margin-top: 16px;
+
+    }
+
+
+
+    .tag {
+
+        color: #A0A0A0;
+
+        font-family: 'sora';
+
+        font-size: 13px;
+
+        margin-top: 6px;
+
+        text-align: center;
+
+        padding: 0 16px;
+
+    }
+
+
+
+    .performance {
+
+        display: flex;
+
+        flex-direction: row;
+
+        gap: 12px;
+
+        padding-top: 24px;
+
+        padding-bottom: 24px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+
+    .card {
+
+        font-family: 'sora';
+
+        font-size: 10px;
+
+        color: #A0A0A0;
+
+        border: 1px solid #2A2D35;
+
+        padding: 14px 16px;
+
+        border-radius: 16px;
+
+        min-width: 70px;
+
+        text-align: center;
+
+    }
+
+
+
+    .goagain {
+
+        color: #FFFFFF;
+
+        background: none;
+
+        border: 1px solid #2A2D35;
+
+        padding: 8px 16px;
+
+        border-radius: 15px;
+
+        margin-bottom: 40px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 10px;
+
+        font-family: 'sora';
+
+        font-size: 13px;
+
+        cursor: pointer;
+
+    }
+
+
+
+    .successicon {
+
+        width: 70px;
+
+        height: 70px;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        border-radius: 50%;
+
+        border: 2px solid #2F80ED;
+
+        box-shadow: 0 0 20px rgba(47, 128, 237, 0.5);
+
+    }
+
+
+
+    .star1,
+
+    .star2 {
+
+        display: none;
+
+    }
+
+
+
+    .blur {
+
+        filter: blur(4px);
+
+        opacity: 0.6;
+
+    }
+
+
+
+    .correct {
+
+        color: #2ECC71;
+
+    }
+
+
+
+    .wrong {
+
+        color: #E74C3C;
+
+    }
+
+
+
+    .restartlogo {
+
+        width: 14px;
+
+        height: 14px;
+
+    }
+
+
+
+#controls.test-active .btn1,
+
+#controls.test-active .timed,
+
+#controls.test-active .passage,
+
+#controls.test-active .difficultymob,
+
+#controls.test-active .mobmode {
+
+    pointer-events: none;
+
+    opacity: 0.4;
+
+    cursor: not-allowed;
+
+}
+
+
+
+
+
+.diffmob,
+
+.modemob {
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+
+
+.difficultymob,
+
+.mobmode {
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    padding-right: 24px; 
+
+}
+
+
+
+.diffmob::after,
+
+.modemob::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: 6px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 10px;
+
+    height: 10px;
+
+    background-image: url("./assets/images/icon-down-arrow.svg"); 
+
+    background-repeat: no-repeat;
+
+    background-size: contain;
+
+    pointer-events: none; 
+
+}
+
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing test by Sri Karthikeya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+</head>
+
+<body class="bod">
+    <main class="app">
+        <div id="header" class="header">
+            <img src="./assets/images/logo-large.svg" alt="logo" class="head-logo"
+                style=" width: 158px;padding-right: 304px;">
+            <img src="./assets/images/logo-small.svg" alt="logo" class="head-logo-mob">
+            <div class="personalscore">
+                <img src="./assets/images/icon-personal-best.svg" alt="personal best" class="trphy-logo">
+                <h3 class="per">Personal best:</h3>
+                <p id="wpmscore" class="wpmscore"></p>
+            </div>
+        </div>
+        <div class="mainstat" id="mainstats">
+            <div class="stats" id="stats">
+                <div id="wpm" class="stats-op">
+                    <span>WPM:</span>
+                    <p>-</p>
+                </div>
+                <div id="accuracy" class="stats-op">
+                    <span>Accuracy:</span>
+                    <p>-</p>
+                </div>
+                <div id="time" class="stats-op">
+                    <span>Time:</span>
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="controls" id="controls"><span style=" color: #A0A0A0;padding-right: 10px;font-size: 11px;font-family: 'sora';">Difficulty</span> 
+                <div id="difficultycard" class="difficulty">
+                    <button id="hard" class="btn1 selected">Hard</button>
+                    <button id="medium" class="btn1">Medium</button>
+                    <button id="easy" class="btn1">Easy</button>
+                </div>
+                <div id="diffmob" class="diffmob">
+                    <select id="difficulty" class="difficultymob">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div id="mode" class="mode" style="    font-size: 11px;    color: #A0A0A0;"><span>Mode</span>
+                    <button id="timed" class="timed">Timed(60s)</button>
+                    <button id="passage" class="passage">Passage</button>
+                </div>
+                <div id="modemob" class="modemob" style="    font-size: 11px;    color: #A0A0A0;"><span>Mode</span>
+                    <select id="mobmode" class="mobmode">
+                        <option>Timed(60s)</option>
+                        <option>passage</otpion>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <hr class="horizontalline">
+        <div id="data" class="data">
+            <p id="para" class="para blur">
+            </p>
+            <button id="start" class="start">Start Typing Test</button>
+            <p id="clickme" class="clickme">Or click the text and start typing</p>
+        </div>
+        <hr class="horizontalline">
+        <div id="retake" class="retake">
+            <button id="restarttest" class="restarttest">
+                Re Start
+            </button>
+        </div>
+        <div id="result" class="result">
+            <img src="./assets/images/pattern-star-1.svg" alt="star1" class="star1">
+            <img src="./assets/images/pattern-star-2.svg" alt="star2" class="star2">
+            <div class="successicon">
+                <img src="./assets/images/icon-completed.svg" alt="completed">
+            </div>
+
+            <h1 id="complete" class="complete">Test Completed</h1>
+            <p id="tag" class="tag">---</p>
+            <div id="performance" class="performance">
+
+                <div id="card1" class="card">
+                    <p>WPM:</p>
+                    <h3 id="resultWpm">85</h3>
+                </div>
+
+                <div id="card2" class="card">
+                    <p>Accuracy:</p>
+                    <h3 id="resultAccuracy">90%</h3>
+                </div>
+
+                <div id="card3" class="card">
+                    <p>Characters</p>
+                    <h3 id="resultCharacters">1205</h3>
+                </div>
+            </div>
+            <div id="btngo" class="btngo">
+                <button id="goagain" class="goagain">
+                    Go Again
+                    <img src="./assets/images/icon-restart.svg" alt="restart" class="restartlogo">
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
