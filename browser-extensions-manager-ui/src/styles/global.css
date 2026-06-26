@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'Noto Sans Italic';
+    src: url('/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans VaraibleFont';
+    src: url('/fonts/NotoSans-VariableFont_wdth,wght.ttf') format("truetype");
+    font-display: swap;
+}
+
+/* ─── LIGHT THEME (default) ─── */
+.app.light {
+  --bg-page:       hsl(217, 61%, 90%);   /* the outer page background */
+  --bg-navbar:     hsl(0, 0%, 100%);     /* navbar card background */
+  --bg-card:       hsl(0, 0%, 100%);     /* extension card background */
+  --text-heading:  hsl(227, 75%, 14%);   /* "Extensions List" heading */
+  --text-body:     hsl(226, 11%, 37%);   /* description text */
+  --text-name:     hsl(227, 75%, 14%);   /* extension name */
+  --border:        hsl(217, 61%, 90%);   /* card border */
+  --btn-filter-bg: hsl(0, 0%, 100%);     /* All/Active/Inactive button */
+  --btn-filter-text: hsl(227, 75%, 14%);
+  --btn-remove-bg:   hsl(0, 0%, 100%);
+  --btn-remove-text: hsl(227, 75%, 14%);
+  --btn-remove-border: hsl(226, 11%, 37%);
+  --toggle-on:  hsl(3, 86%, 64%);        /* red when active */
+  --toggle-off: hsl(0, 0%, 78%);         /* grey when inactive */
+  --active-filter-bg:   hsl(3, 86%, 64%);
+  --active-filter-text: hsl(0, 0%, 100%);
+  --theme-btn-bg: hsl(0, 0%, 93%);
+}
+
+/* ─── DARK THEME ─── */
+.app.dark {
+  --bg-page:       hsl(227, 75%, 14%);
+  --bg-navbar:     hsl(226, 25%, 17%);
+  --bg-card:       hsl(225, 23%, 24%);
+  --text-heading:  hsl(0, 0%, 100%);
+  --text-body:     hsl(0, 0%, 78%);
+  --text-name:     hsl(0, 0%, 100%);
+  --border:        hsl(225, 23%, 30%);
+  --btn-filter-bg: hsl(226, 25%, 17%);
+  --btn-filter-text: hsl(0, 0%, 100%);
+  --btn-remove-bg:    hsl(225, 23%, 24%);
+  --btn-remove-text:  hsl(0, 0%, 100%);
+  --btn-remove-border: hsl(0, 0%, 78%);
+  --toggle-on:  hsl(3, 86%, 64%);
+  --toggle-off: hsl(226, 11%, 37%);
+  --active-filter-bg:   hsl(3, 86%, 64%);
+  --active-filter-text: hsl(0, 0%, 100%);
+  --theme-btn-bg: hsl(226, 25%, 24%);
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Noto Sans VaraibleFont';
+    font-size: 16px;
+}
+
+.app{
+    min-height: 100vh;
+    background-color: var(--bg-page);
+    padding: 24px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ─── NAVBAR ─── */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-navbar);
+  padding: 3px 20px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  width: 124px;
+  height: 26px;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.theme-btn {
+  width: 48px;
+  height: 48px;
+  background-color: var(--theme-btn-bg);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.theme-btn:hover {
+  background-color: var(--border);
+}
+
+.theme-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* ─── FILTER ROW ─── */
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.filter-heading {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background-color: var(--btn-filter-bg);
+  color: var(--btn-filter-text);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--active-filter-bg);
+  color: var(--active-filter-text);
+}
+
+.filter-btn.active {
+  background-color: var(--active-filter-bg);
+  color: var(--active-filter-text);
+  border-color: var(--active-filter-bg);
+}
+
+
+/* ─── CARD GRID ─── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* ─── CARD ─── */
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+  transition: background-color 0.3s ease;
+}
+
+.card-top {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.card-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-name);
+}
+
+.card-description {
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.5;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ─── REMOVE BUTTON ─── */
+.remove-btn {
+  padding: 8px 16px;
+  border-radius: 24px;
+  border: 1px solid var(--btn-remove-border);
+  background-color: var(--btn-remove-bg);
+  color: var(--btn-remove-text);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: var(--active-filter-bg);
+  color: #fff;
+  border-color: var(--active-filter-bg);
+}
+
+/* ─── TOGGLE SWITCH ─── */
+.toggle {
+  width: 48px;
+  height: 26px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.25s ease;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-on {
+  background-color: var(--toggle-on);
+}
+
+.toggle-off {
+  background-color: var(--toggle-off);
+}
+
+.toggle-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  transition: left 0.25s ease;
+}
+
+.toggle-on .toggle-thumb {
+  left: 24px;
+}
+
+.toggle-off .toggle-thumb {
+  left: 3px;
+}
+
+
+.empty-message {
+  color: var(--text-body);
+  text-align: center;
+  padding: 48px 0;
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-heading {
+    font-size: 22px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
