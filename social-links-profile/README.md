@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-* Live Site URL: https://your-live-link.com
+* Live Site URL: https://karthikeya-justforknowing.github.io/frontend_mentor_projects/social-links-profile-main/
 
 ---
 
