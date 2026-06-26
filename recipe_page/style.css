@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;}
+
+.body {
+  background: #fff8f0;
+
+}
+
+.card {
+  background: #fffdf9;
+  margin: 1.5rem;
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 626px;
+  border: 2px solid #ead9cc;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  padding: 20px
+}
+
+.omelette {
+  width: 614px;
+  height: 288px;
+  border-radius: 10px;
+
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.mainhead {
+  color: black;
+  font-family: 'Young Serif';
+  font-size: x-large;
+  font-weight: 200;
+}
+
+p {
+  line-height: 20px;
+  font-family: 'Outfit';
+}
+
+.prep {
+  background-color: bisque;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+li::marker {
+  font-size: 12px;
+  font-weight: 10;
+}
+
+.prep>h3 {
+  margin-left: 20px;
+  color: #c15f5f;
+}
+
+.prep>ul {
+  margin-left: 20px;
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+h1 {
+  color: #c15f5f;
+  font-family: 'Young Serif';
+  font-size: x-large;
+  font-weight: 200;
+}
+
+.ingre{
+  margin-top: 16px;
+}
+
+.instriol{
+  margin: 20px;
+  line-height: 1.5
+}
+.instriol>li::marker {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+
+.nutrition-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.nutrition-table tr{
+  border-bottom:1px solid #ead9cc;
+}
+
+.nutrition-table td{
+  padding:15px 0;
+}
+
+@media (max-width:768px){
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+} 
+
+}
