@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com/static-job-listing)
+- Solution URL:https://github.com/Sri-Karthikeya/static-job-profile
+- Live Site URL: https://Sri-Karthikeya.github.io/frontend_mentor_projects/static-job-profile/
 
 ## My process
 
